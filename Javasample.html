@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anuja's JavaScript Concepts</title>
+</head>
+<body>
+    <script>
+        // Personalized greeting
+        let name = "Anuja";
+        let personalizedGreeting = `Hello, ${name}! This is your personalized JavaScript showcase.`;
+        console.log(personalizedGreeting);
+
+        // Display a personalized message related to Anuja and JavaScript
+        let customMessage = `${name} has a passion for JavaScript and enjoys building interactive web applications. JavaScript is a versatile and powerful language that allows ${name} to create dynamic and responsive websites that make users' online experiences more engaging and enjoyable. Whether it's creating interactive forms, adding animations, or handling user interactions, JavaScript is an essential tool in ${name}'s web development journey. Keep exploring and building amazing things with JavaScript, ${name}!`;
+
+        // Display the custom message on the webpage
+        let messageElement = document.createElement("p");
+        messageElement.textContent = customMessage;
+        document.body.appendChild(messageElement);
+
+        // a. String methods
+        let sampleString = "Coding is fun, Anuja!";
+
+        // 1. length
+        let stringLength = sampleString.length;
+
+        // 2. toUpperCase
+        let uppercaseString = sampleString.toUpperCase();
+
+        // 3. toLowerCase
+        let lowercaseString = sampleString.toLowerCase();
+
+        // 4. indexOf
+        let indexOfExclamation = sampleString.indexOf("!");
+
+        // 5. substring
+        let substringIsFun = sampleString.substring(0, 13);
+
+        // b. Number methods
+        let sampleNumber = 42;
+
+        // 1. toString
+        let numberAsString = sampleNumber.toString();
+
+        // 2. toFixed
+        let numberFixed = sampleNumber.toFixed(2);
+
+        // 3. parseInt
+        let parsedInt = parseInt("123");
+
+        // 4. parseFloat
+        let parsedFloat = parseFloat("3.14");
+
+        // 5. isNaN
+        let isNotANumber = isNaN("Hello");
+
+        // c. Array methods
+        let sampleArray = [1, 2, 3, 4, 5];
+
+        // 1. push
+        sampleArray.push(6);
+
+        // 2. pop
+        let poppedValue = sampleArray.pop();
+
+        // 3. join
+        let arrayString = sampleArray.join("-");
+
+        // 4. reverse
+        sampleArray.reverse();
+
+        // 5. indexOf
+        let indexOfThree = sampleArray.indexOf(3);
+
+        // d. Date methods
+        let currentDate = new Date();
+
+        // 1. getFullYear
+        let currentYear = currentDate.getFullYear();
+
+        // 2. getMonth
+        let currentMonth = currentDate.getMonth();
+
+        // 3. getDate
+        let currentDay = currentDate.getDate();
+
+        // 4. getHours
+        let currentHour = currentDate.getHours();
+
+        // 5. toLocaleDateString
+        let formattedDate = currentDate.toLocaleDateString();
+
+        // e. Function Methods
+        function greet(name) {
+            return `Hello, ${name}!`;
+        }
+
+        // 1. call
+        let greeting1 = greet.call(null, "John");
+
+        // 2. apply
+        let greeting2 = greet.apply(null, ["Alice"]);
+
+        console.log("String Length:", stringLength);
+        console.log("Uppercase String:", uppercaseString);
+        console.log("Lowercase String:", lowercaseString);
+        console.log("Index of Exclamation:", indexOfExclamation);
+        console.log("Substring 'Is Fun':", substringIsFun);
+
+        console.log("Number as String:", numberAsString);
+        console.log("Number Fixed to 2 Decimals:", numberFixed);
+        console.log("Parsed Integer:", parsedInt);
+        console.log("Parsed Float:", parsedFloat);
+        console.log("Is NaN:", isNotANumber);
+
+        console.log("Array after Push:", sampleArray);
+        console.log("Popped Value:", poppedValue);
+        console.log("Array as String:", arrayString);
+        console.log("Reversed Array:", sampleArray);
+        console.log("Index of 3:", indexOfThree);
+
+        console.log("Current Year:", currentYear);
+        console.log("Current Month:", currentMonth);
+        console.log("Current Day:", currentDay);
+        console.log("Current Hour:", currentHour);
+        console.log("Formatted Date:", formattedDate);
+
+        console.log("Greeting 1:", greeting1);
+        console.log("Greeting 2:", greeting2);
+    </script>
+</body>
+</html>

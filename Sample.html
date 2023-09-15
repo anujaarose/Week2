@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <style>
+        /* Define basic styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Create a header with a background color */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Define a container to hold content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Create columns for responsive layout */
+        .column {
+            width: 100%;
+            float: left;
+            padding: 10px;
+        }
+
+        /* Define styles for large screens */
+        @media screen and (min-width: 768px) {
+            .column {
+                width: 50%;
+            }
+        }
+
+        /* Define styles for extra-large screens */
+        @media screen and (min-width: 1200px) {
+            .column {
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Web Design</h1>
+    </header>
+    <div class="container">
+        <div class="column">
+            <h2>Responsive Web Design</h2>
+            <p>Responsive web design is an approach that makes web pages render well on a variety of devices and window or screen sizes.</p>
+        </div>
+        <div class="column">
+            <h2>Viewport Meta Tag</h2>
+            <p>The viewport meta tag is used to control how a webpage is displayed on different devices by setting the initial scale and width.</p>
+        </div>
+        <div class="column">
+            <h2>Media Queries</h2>
+            <p>Media queries are CSS rules that allow you to apply different styles based on the characteristics of the device or screen size, creating a responsive layout.</p>
+        </div>
+        <div class="column">
+            <h2>Fluid Grid Layout</h2>
+            <p>A fluid grid layout uses relative units like percentages to create flexible grids that adapt to different screen sizes.</p>
+        </div>
+    </div>
+</body>
+</html>
